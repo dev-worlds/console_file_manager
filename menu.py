@@ -2,57 +2,57 @@ menu = {
     1: {
         'id': 1,
         'title': 'Создать папку',
-        'method': 'createFolder'
+        'method': 'create_folder'
     },
     2: {
         'id': 2,
         'title': 'Удалить (файл/папку)',
-        'method': 'removeFolder'
+        'method': 'remove_folder'
     },
     3: {
         'id': 3,
         'title': 'Копировать (файл/папку)',
-        'method': 'copyItem'
+        'method': 'copy_item'
     },
     4: {
         'id': 4,
         'title': 'Просмотр содержимого рабочей директории',
-        'method': 'viewDirectory'
+        'method': 'view_directory'
     },
     5: {
         'id': 5,
         'title': 'Посмотреть только папки',
-        'method': 'viewFolders'
+        'method': 'view_folders'
     },
     6: {
         'id': 6,
         'title': 'Посмотреть только файлы',
-        'method': 'viewFiles'
+        'method': 'view_files'
     },
     7: {
         'id': 7,
         'title': 'Просмотр информации об операционной системе',
-        'method': 'viewInfoOS'
+        'method': 'view_info_OS'
     },
     8: {
         'id': 8,
         'title': 'Создатель программы',
-        'method': 'getAuthor'
+        'method': 'get_author'
     },
     9: {
         'id': 9,
         'title': 'Играть в викторину',
-        'method': 'playQuiz'
+        'method': 'play_quiz'
     },
     10: {
         'id': 10,
         'title': 'Мой банковский счет',
-        'method': 'bankBill'
+        'method': 'play_bank_bill'
     },
     11: {
         'id': 11,
         'title': 'Смена рабочей директории',
-        'method': 'changeDirectory'
+        'method': 'change_directory'
     },
     0: {
         'id': 0,

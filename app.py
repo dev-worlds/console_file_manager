@@ -8,6 +8,7 @@ def init():
 
 def menu_switch():
     while True:
+        print('\n********************************************\n')
         for menu_item in menu.values():
             print(f"{menu_item['id']}. {menu_item['title']}")
         choose = int(input('Выберите пункт меню: '))

@@ -1,77 +1,79 @@
 import os
 import platform
 import shutil
+import quiz
+import bank_bill
 
 
-def is_file(path):
+def __is_file(path):
     return os.path.isfile(path)
 
 
-def is_folder(path):
+def __is_folder(path):
     return os.path.isdir(path)
 
 
-def createFolder():
+def create_folder():
     name = input('Введите название папки: ')
     os.mkdir(name)
 
 
-def removeFolder():
+def remove_folder():
     name = input('Введите название элемента: ')
     if os.path.exists(name):
-        if is_file(name):
+        if __is_file(name):
             os.remove(name)
-        if is_folder(name):
+        if __is_folder(name):
             os.rmdir(name)
 
 
-def copyItem():
+def copy_item():
     old_name = input('Введите название элемента: ')
     new_name = input('Введите новое название: ')
     if os.path.exists(old_name):
-        if is_file(old_name):
+        if __is_file(old_name):
             shutil.copy(old_name, new_name)
-        if is_folder(old_name):
+        if __is_folder(old_name):
             shutil.copytree(old_name, new_name)
 
 
-def viewDirectory():
+def view_directory():
     print(os.listdir())
 
 
-def viewFolders():
+def view_folders():
     folders = []
     for item in os.listdir():
-        if (is_folder(item)):
+        if (__is_folder(item)):
             folders.append(item)
     print(folders)
 
 
-def viewFiles():
+def view_files():
     files = []
     for item in os.listdir():
-        if (is_file(item)):
+        if (__is_file(item)):
             files.append(item)
     print(files)
 
 
-def viewInfoOS():
+def view_info_OS():
     print(platform.platform())
 
 
-def getAuthor():
+def get_author():
     print('Лавров Алексей Романович - создатель программы')
 
 
-def playQuiz():
-    pass
+def play_quiz():
+    quiz.start()
 
 
-def bankBill():
-    pass
+def play_bank_bill():
+    bank_bill.start()
 
 
-def changeDirectory():
+def change_directory():
     path = os.path.join(input('Введите новую рабочую область: '))
     os.chdir(path)
 
